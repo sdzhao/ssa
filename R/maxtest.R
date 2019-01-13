@@ -31,7 +31,7 @@ maxtest <- function(T1,T2){
   if(sum(c(T1,T2)<0)>0){
     stop("Test statistics must be positive");
   }
-  if(sum(is.na(T1)||is.na(T2))>0){
+  if(sum(is.na(T1)) > 0 || sum(is.na(T2)) > 0){
     stop("No missing data allowed");
   }
   

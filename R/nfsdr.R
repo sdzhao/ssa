@@ -128,7 +128,7 @@ nfsdr2 <- function(T1,T2,alpha,m1=10000,m2=10000,p1=TRUE,p2=TRUE,jitter=NULL){
   if(sum(c(T1,T2)<0)>0){
     stop("Test statistics must be positive");
   }
-  if(sum(is.na(T1)||is.na(T2))>0){
+  if(sum(is.na(T1)) > 0 || sum(is.na(T2)) > 0){
     stop("No missing data allowed");
   }
   if(alpha>1){

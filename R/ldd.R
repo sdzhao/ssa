@@ -43,7 +43,7 @@ ldd <- function(T1,T2,m1=1000,m2=1000,perm=0,p1=TRUE,p2=TRUE,jitter=NULL){
     if(length(T1)!=length(T2)){
         stop("Test statistic vectors must be of same length");
     }
-    if(sum(is.na(T1)||is.na(T2))>0){
+    if(sum(is.na(T1)) > 0 || sum(is.na(T2)) > 0){
         stop("No missing data allowed");
     }
     if(sum(c(T1,T2)<0)>0){
