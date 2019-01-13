@@ -11,6 +11,7 @@
 #' @return indices of the features delcared to be simultaneous signals
 #'
 #' @examples
+#' \donttest{
 #' ## generate paired test statistics
 #' p <- 10^6; ## total number of pairs
 #' X <- c(rep(0,p-30),rep(1,10),rep(2,10),rep(3,10));
@@ -24,6 +25,7 @@
 #' T <- cbind(Z1^2, Z2^2);
 #' ## rejected simultaneous signals
 #' nfsdr(T, 0.05)
+#' }
 #'
 #' @import stats
 #' @importFrom utils combn

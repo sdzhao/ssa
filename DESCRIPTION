@@ -1,7 +1,7 @@
 Package: ssa
 Title: Simultaneous Signal Analysis
 Version: 1.3.0
-Authors@R: person("Dave", "Zhao", email = "sdzhao@illinois.edu", role = c("aut", "cre"))
+Authors@R: person("Dave", "Zhao", email = "dave.zhao@gmail.com", role = c("aut", "cre"))
 Description: Procedures for analyzing simultaneous signals, e.g., features that are simultaneously significant in two different studies. Includes methods for detecting simultaneous signals, for identifying them under false discovery rate control, and for leveraging them to improve prediction.
 Depends:
     R (>= 3.2.2)

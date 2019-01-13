@@ -2,3 +2,6 @@
 .Rhistory
 .RData
 *~
+*.so
+*.dll
+*.o
